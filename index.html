@@ -178,10 +178,48 @@ footer {
     color: #d8ecff;
     margin: 10px;
 }
+    .cb-display {
+    margin: 25px auto;
+    padding: 15px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid #29b6ff;
+    border-radius: 10px;
+    color: #29b6ff;
+    font-family: monospace;
+    box-shadow: 0 0 20px #29b6ff;
+    text-shadow: 0 0 8px #29b6ff;
+}
+    
 </style>
 
 </head>
 
+    <script>
+const radioMessages = [
+    "📡 Breaker breaker... Rebel Rig is rolling.",
+    "🚛 10-4 good buddy... hauling chaos across the highway.",
+    "🐺 Driver update: Wolf behind the wheel.",
+    "⚡ Engine status: Creativity at maximum output.",
+    "🛣️ GPS recalculating... destination: trouble.",
+    "📦 Cargo secured: Gaming, VR, and questionable decisions.",
+    "📡 Channel 19: Rebel Rig coming through."
+];
+
+let radioIndex = 0;
+
+setInterval(() => {
+    radioIndex++;
+    if (radioIndex >= radioMessages.length) {
+        radioIndex = 0;
+    }
+
+    document.getElementById("radio-message").textContent =
+        radioMessages[radioIndex];
+
+}, 4000);
+</script>
+    
 <body>
 
 <header>
@@ -201,6 +239,10 @@ footer {
     <p>⚡ STATUS: HAULING CHAOS</p>
 </div>
 
+    <div class="cb-display">
+    <span id="radio-message">📡 Breaker breaker... Rebel Rig is rolling.</span>
+</div>
+    
 <div class="buttons">
     <a href="https://twitch.tv/truckinrebel" target="_blank">🎮 Twitch</a>
     <a href="https://www.tiktok.com/@truckinrebelttv" target="_blank">🎵 TikTok</a>
