@@ -157,6 +157,48 @@ footer {
 .rig-status p {
     margin: 8px;
 }
+    <div class="live-panel">
+
+    <h2>🔴 REBEL RIG BROADCAST</h2>
+
+    <p>
+        📡 STATUS: CHECKING CHANNEL...
+    </p>
+
+    <a href="https://twitch.tv/truckinrebel" target="_blank">
+        🚛 ENTER THE CAB (WATCH LIVE)
+    </a>
+
+</div>
+    <div class="content-panel">
+
+    <h2>🎵 LATEST HAULS</h2>
+
+    <p>
+        Fresh clips from the digital highway.
+    </p>
+
+    <div class="video-grid">
+
+        <div class="video-card">
+            <h3>🎬 TikTok Clip</h3>
+            <p>Add your newest chaos here.</p>
+            <a href="https://www.tiktok.com/@truckinrebelttv" target="_blank">
+                Watch on TikTok
+            </a>
+        </div>
+
+        <div class="video-card">
+            <h3>🎬 TikTok Clip</h3>
+            <p>More Rebel Rig moments.</p>
+            <a href="https://www.tiktok.com/@truckinrebelttv" target="_blank">
+                Watch on TikTok
+            </a>
+        </div>
+
+    </div>
+
+</div>
     .cb-radio {
     margin: 40px auto;
     padding: 25px;
@@ -193,6 +235,42 @@ footer {
     
 </style>
 
+    .live-panel,
+.content-panel {
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 700px;
+    background: rgba(5,15,30,.9);
+    border: 2px solid #29b6ff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #29b6ff;
+}
+
+.live-panel a,
+.video-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: 1px solid #29b6ff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.video-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.video-card {
+    width: 250px;
+    padding: 20px;
+    background: rgba(41,182,255,.1);
+    border-radius: 10px;
+}
+    
 </head>
 
     <script>
